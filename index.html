@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FORM VALIDATION</title>
+
+  <link rel="shortcut icon" href="">
+
+  <link rel="stylesheet" property=stylesheet href="./dist/css/app.css">
+  <link rel="stylesheet" href="./dist/plugins/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" />
+
+</head>
+<body>
+  <form id="registerForm">
+
+      <label>First Name</label>
+      <input type="text" class="form-field js-form-field" data-name="First name" data-required="true" data-type="text" />
+      <div class="error-text js-error-text"></div>
+
+      <label>Last Name</label>
+      <input type="text" class="form-field js-form-field" data-name="Last name" data-required="true" data-type="text" />
+      <div class="error-text js-error-text"></div>
+
+      <label>Birthday</label>
+      <input type="text" class="form-field js-form-field form-field--birthday" data-name="Birthday" data-required="true" data-type="date" placeholder="dd-mm-yyyy" />
+      <div class="error-text js-error-text"></div>
+
+      <label>Sex</label>
+      Male<input type="radio" class="form-field js-form-field" name="Sex" data-name="Sex" data-required="true" data-type="radio" value="Male" checked />
+      Female<input type="radio" class="form-field js-form-field" name="Sex" data-name="Sex" data-required="true" data-type="radio" value="Female" />
+      <div class="error-text js-error-text"></div>
+
+      <label>Country</label>
+      <select class="form-field js-form-field" data-name="Country" data-required="true" data-type="select" >
+        <option value="Ukraine" selected>Ukraine</option>
+        <option value="USA">USA</option>
+        <option value="Great Britain">Great Britain</option>
+      </select>
+      <div class="error-text js-error-text"></div>
+
+      <label>Email</label>
+      <input type="email" class="form-field js-form-field" data-name="Email" data-required="true" data-type="email" />
+      <div class="error-text js-error-text"></div>
+
+      <label>Password</label>
+      <input type="password" class="form-field js-form-field" data-name="Password" data-required="true" data-type="password" />
+      <div class="error-text js-error-text"></div>
+
+      <label>Address</label>
+      <input type="text" class="form-field js-form-field" data-name="Address" data-required="true" data-type="text" />
+      <div class="error-text js-error-text"></div>
+
+      <label>Notes</label>
+      <textarea class="form-field js-form-field" data-name="Notes" data-required="false" data-type="text"></textarea>
+      <div class="error-text js-error-text"></div>
+
+      <button type="submit" value="submit" class="js-form-submit">Submit</button>
+
+      <div id="modalSuccess" class="modal" title="Success">
+        <p>Registration complete!</p>
+      </div>
+  </form>
+
+  <script src="./dist/plugins/jquery/jquery.js"></script>
+  <script src="./dist/plugins/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="./dist/js/app.js"></script>
+</body>
+</html>
